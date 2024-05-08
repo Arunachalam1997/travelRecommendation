@@ -17,10 +17,17 @@ function searchResult(){
         if(results){
             const countryName = results.name;
             const cityName = results.cities.name
+            const cityImages = results.cities.imageUrl
+            const cityDescription = results.cities.description
             console.log(cityName);
             console.log(countryName);
+            resultsDiv.innerHTML = `<h1>${countryName}</h1>
+                                   <h2>City name: ${cityName}</h2>
+                                   <img src=${cityImages}/>
+                               <p>About City: ${cityDescription}</p>`
+
         } else {
-            alert('This country doesnt have Travel Recommendation');
+            resultsDiv.innerHTML='This country doesnt have Travel Recommendation'
         }
     })
 }
