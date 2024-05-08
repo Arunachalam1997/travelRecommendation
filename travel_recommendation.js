@@ -12,26 +12,29 @@ function searchResult(){
     fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => {
-        const results = data.countries.find(item => item.name == searchInput )
+        const countries = data.countries.find(country => country.name.toLowerCase() == searchInput.toLowerCase());
  
         if(results){
-            results.cities.forEach(result => {
-                const countryName = result.name;
-                const cityName = result.cities.name;
-                const cityImages = result.cities.imageUrl;
-                const cityDescription = result.cities.description
+            resultsDiv.innerHTML = "";
+
+            countries.cities.forEach(city => {
+                const countryName = results.name;
+                const cityName = city.name;
+                const cityImages = city.imageUrl;
+                const cityDescription = city.description
         
                 resultsDiv.innerHTML = `<h1>${countryName}</h1>
                                        <h2>City name: ${cityName}</h2>
                                        <img src=${cityImages}/>
                                    <p>About City: ${cityDescription}</p>`
-                
             });
-          
-
         } else {
-            resultsDiv.innerHTML= alert('This country doesnt have Travel Recommendation');
+            resultsDiv.innerHTML= alert('This country doesnt have any Travel Recommendation');
         }
+    })
+    .catch(error =>{
+        console.error('Error fetching data:', error);
+        resultsDiv.innerHTML = '<p>Failed to fetch travel recommendations. Please try again later.</p>';
     })
 }
 searchButton.addEventListener('click', searchResult);
