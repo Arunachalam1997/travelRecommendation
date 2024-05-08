@@ -16,9 +16,8 @@ function searchResult(){
  
         if(results){
             resultsDiv.innerHTML = "";
-
-            countries.cities.forEach(city => {
-                const countryName = results.name;
+            const countryName = countries.name;
+            countries.cities.map(city => {
                 const cityName = city.name;
                 const cityImages = city.imageUrl;
                 const cityDescription = city.description
