@@ -15,16 +15,19 @@ function searchResult(){
         const results = data.countries.find(item => item.name == searchInput )
  
         if(results){
-            const countryName = results.name;
-            const cityName = results.cities.name
-            const cityImages = results.cities.imageUrl
-            const cityDescription = results.cities.description
-            console.log(cityName);
-            console.log(countryName);
-            resultsDiv.innerHTML = `<h1>${countryName}</h1>
-                                   <h2>City name: ${cityName}</h2>
-                                   <img src=${cityImages}/>
-                               <p>About City: ${cityDescription}</p>`
+            results.forEach(result => {
+                const countryName = result.name;
+                const cityName = result.cities.name;
+                const cityImages = result.cities.imageUrl;
+                const cityDescription = result.cities.description
+        
+                resultsDiv.innerHTML = `<h1>${countryName}</h1>
+                                       <h2>City name: ${cityName}</h2>
+                                       <img src=${cityImages}/>
+                                   <p>About City: ${cityDescription}</p>`
+                
+            });
+          
 
         } else {
             resultsDiv.innerHTML='This country doesnt have Travel Recommendation'
