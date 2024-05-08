@@ -15,11 +15,14 @@ function searchResult(){
         const results = data.countries.find(item => item.name == searchInput )
  
         if(results){
-            const cityName = results.city.name;
+            const countryName = results.name;
+            const cityName = results.cities.name
             console.log(cityName);
+            console.log(countryName);
+        } else {
+            alert('This country doesnt have Travel Recommendation');
         }
     })
 }
-searchResult();
 searchButton.addEventListener('click', searchResult);
 clearbtn.addEventListener('click', clearInput);
