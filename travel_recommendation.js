@@ -15,7 +15,7 @@ function searchResult(){
         const results = data.countries.find(item => item.name == searchInput )
  
         if(results){
-            results.forEach(result => {
+            results.cities.forEach(result => {
                 const countryName = result.name;
                 const cityName = result.cities.name;
                 const cityImages = result.cities.imageUrl;
@@ -30,7 +30,7 @@ function searchResult(){
           
 
         } else {
-            resultsDiv.innerHTML='This country doesnt have Travel Recommendation'
+            resultsDiv.innerHTML= alert('This country doesnt have Travel Recommendation');
         }
     })
 }
