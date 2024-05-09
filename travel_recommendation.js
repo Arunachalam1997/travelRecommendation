@@ -18,14 +18,10 @@ function searchResult(){
             resultsDiv.innerHTML = "";
             const countryName = countries.name;
             countries.cities.map(city => {
-                const cityName = city.name;
-                const cityImages = city.imageUrl;
-                const cityDescription = city.description
-        
                 resultsDiv.innerHTML = `<h1>${countryName}</h1>
-                                       <h2>City name: ${cityName}</h2>
-                                       <img src=${cityImages}/>
-                                   <p>About City: ${cityDescription}</p>`
+                                       <h2>City name: ${city.name}</h2>
+                                       <img src=${city.imageUrl}/>
+                                   <p>About City: ${city.description}</p>`
             });
         } else {
             resultsDiv.innerHTML= alert('This country doesnt have any Travel Recommendation');

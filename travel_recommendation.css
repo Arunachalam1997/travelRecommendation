@@ -6,6 +6,7 @@
 
 nav{
     background-color: #2a5d66;
+    margin-bottom: 2px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -24,8 +25,12 @@ nav ul {
 
   nav a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
+  }
+
+  nav h1 {
+    color: #fff;
   }
 
   body {
@@ -35,6 +40,26 @@ nav ul {
 
   .container{
     text-align: center;
+  }
+
+  #btnSearch{
+    padding: 7px 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #0081df;
+    box-shadow: none;
+  }
+
+  #searchInput{
+      padding: 8px;
+      border-radius: 20px
+  }
+  #btnClear{
+    padding: 7px 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #0081df;
+    box-shadow: none;
   }
 
   .home-banner{
