@@ -1,6 +1,7 @@
 const searchButton = document.getElementById('btnSearch');
 const clearbtn = document.getElementById('btnClear');
 const resultsDiv = document.getElementById('results');
+const timeZoneDiv = document.getElementById('time-zone');
 
 
 function clearInput(){
@@ -32,5 +33,12 @@ function searchResult(){
         resultsDiv.innerHTML = '<p>Failed to fetch travel recommendations. Please try again later.</p>';
     })
 }
+
+// const options = { timeZone: 'America/New_York', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+// const newYorkTime = new Date().toLocaleTimeString('en-US', options);
+// console.log("Current time in New York:", newYorkTime);
+// timeZoneDiv.innerHTML = `<h1>${newYorkTime}</h1>`;
+
+
 searchButton.addEventListener('click', searchResult);
 clearbtn.addEventListener('click', clearInput);

@@ -5,7 +5,7 @@
 }
 
 nav{
-    background-color: #2a5d66;
+    background-color: #1b2530;
     margin-bottom: 2px;
     padding: 20px;
     display: flex;
@@ -46,7 +46,7 @@ nav ul {
     padding: 7px 15px;
     border-radius: 20px;
     color: #fff;
-    background-color: #0081df;
+    background-color: #dcbb87;
     box-shadow: none;
   }
 
@@ -58,7 +58,7 @@ nav ul {
     padding: 7px 15px;
     border-radius: 20px;
     color: #fff;
-    background-color: #0081df;
+    background-color: #dcbb87;
     box-shadow: none;
   }
 
@@ -96,4 +96,23 @@ nav ul {
   .page-title{
     margin-left: 50px;
     color:aliceblue;
+  }
+
+  .results{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    background: #fff;
+    padding: 25px;
+    width: 30%;
+    border-radius: 10px;
+    
+  }
+  .results h1{
+    font-size: 22px;
+    color: #0055db;
+  }
+
+  ul{
+    list-style-type: none;
   }
