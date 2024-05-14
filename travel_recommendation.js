@@ -6,6 +6,7 @@ const timeZoneDiv = document.getElementById('time-zone');
 
 function clearInput(){
      document.getElementById('searchInput').value = '';
+     resultsDiv.innerHTML = "";
 }
 
 function searchResult(){
