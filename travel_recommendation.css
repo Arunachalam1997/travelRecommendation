@@ -115,3 +115,25 @@ nav ul {
   ul{
     list-style-type: none;
   }
+
+#social-media{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 5px;
+}
+
+#social-media ul{
+  padding: 0;
+}
+
+.footer{
+  background-color: #1b2530;
+  color: #fff;
+}
+
+#weather{
+  position: absolute;
+  z-index: 2;
+  left: 25px;
+}

@@ -39,7 +39,32 @@ function searchResult(){
 // const newYorkTime = new Date().toLocaleTimeString('en-US', options);
 // console.log("Current time in New York:", newYorkTime);
 // timeZoneDiv.innerHTML = `<h1>${newYorkTime}</h1>`;
-
+const city = "New Delhi"
+const apiKey = 'fa4b4c7ab0a885ee54250eadec6780c4';
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+fetch(apiUrl)
+.then(response => response.json())
+.then(data => {
+    const weatherInfo = document.getElementById('weather')
+    weatherInfo.innerHTML = `<h2>${data.name}<h2>
+    <p>${data.main.temp} &#8451;</p>
+    <p>Weather: ${data.weather[0].description}`
+})
 
 searchButton.addEventListener('click', searchResult);
 clearbtn.addEventListener('click', clearInput);
+
+
+function validatingForm(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var condition = document.getElementById('condition').value;
+    var message = document.getElementById('message').value;
+
+    if(name == '' && email == '' && condition == '' && message == ''){
+        alert('Please fill out all fields');
+    }
+}
+
+
+
