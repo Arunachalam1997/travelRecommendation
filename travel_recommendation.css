@@ -98,7 +98,7 @@ nav ul {
     color:aliceblue;
   }
 
-  .results{
+  #results{
     position: absolute;
     top: 80px;
     right: 50px;
@@ -107,7 +107,7 @@ nav ul {
     width: 30%;
     border-radius: 10px;
   }
-  .results h1{
+  #results h1{
     font-size: 22px;
     color: #0055db;
   }
