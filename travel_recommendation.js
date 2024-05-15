@@ -20,10 +20,12 @@ function searchResult(){
             resultsDiv.innerHTML = "";
             const countryName = countries.name;
             countries.cities.map(city => {
-                resultsDiv.innerHTML = `<h1>${countryName}</h1>
+                resultsDiv.innerHTML = `
+                <div class= "main-result">
+                <h1>${countryName}</h1>
                                        <h2>City name: ${city.name}</h2>
                                        <img src=${city.imageUrl}/>
-                                   <p>About City: ${city.description}</p>`
+                                   <p>About City: ${city.description}</p> </div>`
             });
         } else {
             resultsDiv.innerHTML= alert('This country doesnt have any Travel Recommendation');
