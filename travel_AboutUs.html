@@ -4,27 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="travel_recommendation.css">
+    <link rel="stylesheet" href="./Assets/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="travel_recommendation.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
-<style>
-    .container{
-        margin-left: 20px;
-    }
-</style>
+ 
 <body>
-  <nav><h1>Air Travel</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="travel_AboutUs.html">About Us</a></li>
-        <li><a href="travel_contact.html">Contact Us</a></li>
-        <li><input type="text" id="searchInput" placeholder="Search for Recommendation"></li>
-        <li><button id="btnSearch">Search</button></li>
-        <li><button id="btnClear">Clear</button></li>
-    </ul>
-    </nav>
-    <div class="container">
-            <h1>About Us</h1>
-            <div class="home-banner">
+  <!-- Header Section -->
+
+  <section class="header-section">
+    <div class="header-main">
+      <div class="logo-section">
+        <img src="./Images/air-travel-trans.png" alt="Air Travel Logo" />
+      </div>
+
+      <div class="header-info">
+        <div class="info1">
+          <div class="icon-box">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="info-content">
+            <h6>Location</h6>
+            <span>Location</span>
+          </div>
+        </div>
+        <div class="info1">
+          <div class="icon-box">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <div class="info-content">
+            <h6>Mobile</h6>
+            <span>+91 - 9876543210</span>
+          </div>
+        </div>
+        <div class="info1">
+          <div class="icon-box">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="info-content">
+            <h6>Mail</h6>
+            <span>abc@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-container">
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="travel_AboutUs.html">About Us</a></li>
+              <li><a href="travel_contact.html">Contact Us</a></li>
+              
+            </ul>
+      </nav>
+      <div class="searchbox">          
+            <input type="text" id="searchInput" placeholder="Search for Recommendation"/>            
+              <button id="btnSearch">Search</button>
+              <button id="btnClear">Clear</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Header Section End -->
+
+     
+            <!-- <h1>About Us</h1> -->
+            <div class="home-banner h-5">
             <div>
                 <p>we're passionate about helping travelers discover their next adventure. With a team of experienced travel enthusiasts and experts, we strive to provide personalized recommendations tailored to your interests, preferences, and budget.</p>
             </div>
@@ -52,7 +106,7 @@
                   </table>
                   
             </div>
-        </div>
+        
 
 </body>
 </html>
