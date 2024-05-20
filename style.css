@@ -158,7 +158,7 @@ body {
 
 .home-banner::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.2196078431);
+  background-color: rgba(0, 0, 0, 0.31);
   position: absolute;
   z-index: 0;
   width: 100%;
@@ -179,25 +179,36 @@ body {
   color: aliceblue;
 }
 
+#results {
+  position: relative;
+}
+
 .main-result {
   position: absolute;
-  top: 80px;
-  right: 50px;
   background: #fff;
   padding: 25px;
   width: 30%;
   border-radius: 10px;
+  z-index: 1;
+  top: 100px;
+  right: 120px;
 }
 
 .main-result h1 {
   font-size: 22px;
-  color: #0055db;
+  color: #0078e7;
+}
+.main-result h2 {
+  color: #000;
+  font-size: 24px;
 }
 
 .con-container {
   max-width: 1170px;
   margin: auto;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .contactbanners {
@@ -254,6 +265,60 @@ body {
   letter-spacing: 1px;
   border-radius: 7px;
   margin-top: 10px;
+}
+
+.aboutbanners .aboutpara {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+.show-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.show-data table {
+  width: 80%;
+  background-color: #fff;
+  border: 1px solid #848484;
+}
+.show-data table thead tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.show-data table thead tr th {
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  background-color: rgba(0, 133, 255, 0.768627451);
+  color: #fff;
+}
+.show-data table tbody {
+  display: block;
+  max-height: 150px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.show-data table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.show-data table tbody tr td {
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  color: #707070;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
 }
 
 .h-5 {
