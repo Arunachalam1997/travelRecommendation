@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/bootstrap.min.css" />
-    <link rel="stylesheet" href="travel_recommendation.css" />
-    <link rel="stylesheet" href="./main-style.css" />
+    <!-- <link rel="stylesheet" href="travel_recommendation.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -60,53 +60,34 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="travel_AboutUs.html">About Us</a></li>
                 <li><a href="travel_contact.html">Contact Us</a></li>
-                <!-- <li>
-                  <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Search for Recommendation"
-                  />
-                </li>
-                <li><button id="btnSearch">Search</button></li>
-                <li><button id="btnClear">Clear</button></li> -->
+                
               </ul>
         </nav>
+        <div class="searchbox">          
+              <input type="text" id="searchInput" placeholder="Search for Recommendation"/>            
+                <button id="btnSearch">Search</button>
+                <button id="btnClear">Clear</button>
+        </div>
+        
 
       </div>
+      <div id="results"></div>
 
     </section>
 
     <!-- Header Section End -->
 
-    <!-- <nav>
-      <div class="logo-div">
-        <img src="./Images/air-travel-trans.png" alt="" />
-      </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="travel_AboutUs.html">About Us</a></li>
-        <li><a href="travel_contact.html">Contact Us</a></li>
-        <li>
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search for Recommendation"
-          />
-        </li>
-        <li><button id="btnSearch">Search</button></li>
-        <li><button id="btnClear">Clear</button></li>
-      </ul>
-    </nav> -->
-    <div id="weather"></div>
-    <div class="home-banner">
-      <div id="social-media">
+  
+    <!-- <div id="weather"></div> -->
+    <div class="home-banner h-5">
+      <!-- <div id="social-media">
         <ul>
           <li><i class="fa-brands fa-facebook"></i></li>
           <li><i class="fa-brands fa-instagram"></i></li>
           <li><i class="fa-brands fa-twitter"></i></li>
           <li><i class="fa-brands fa-youtube"></i></li>
         </ul>
-      </div>
+      </div> -->
       <div class="header-text">
         <h1 class="page-title">
           Unlock Your Wanderlust: Curated Travel Recommendations
@@ -116,7 +97,7 @@
       <!-- <img src="Images/Homepage.jpg" alt="Homepage Image"> -->
     </div>
 
-    <div id="results"></div>
+    
 
     <footer>
       <div class="footer">Created by Arun Riyaz | © All rights reserved! by TravelIndia</div>
