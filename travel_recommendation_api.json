@@ -7,12 +7,12 @@
         "cities": [
           {
             "name": "Sydney, Australia",
-            "imageUrl": "./Images/Australia.png",
+            "imageUrl": "Images/Australia.png",
             "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
           },
           {
             "name": "Melbourne, Australia",
-            "imageUrl": "../Images/Australia.png",
+            "imageUrl": "Images/Australia.png",
             "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
           }
         ]
@@ -53,30 +53,74 @@
     "temples": [
       {
         "id": 1,
-        "name": "Angkor Wat, Cambodia",
-        "imageUrl": "Images/Jaban.png",
-        "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+        "name": "Angkor Wat",
+        "cities": [
+          {
+            "name": "Angkor Wat, Cambodia",
+            "imageUrl": "Images/temples/Angkor.webp",
+            "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+          }
+        ]
       },
       {
         "id": 2,
-        "name": "Taj Mahal, India",
-        "imageUrl": "Images/Jaban.png",
-        "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+        "name": "Taj Mahal",
+        "cities":[
+          {
+            "name": "Taj Mahal, India",
+            "imageUrl": "Images/temples/tajmahal.jpg",
+           "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+          }
+        ]
       }
     ],
     "beaches": [
       {
         "id": 1,
-        "name": "Bora Bora, French Polynesia",
-        "imageUrl": "Images/Jaban.png",
-        "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+        "name": "Bora Bora",
+         "cities": [
+          {
+            "name": "Bora Bora, French Polynesia",
+            "imageUrl": "Images/beaches/BoraBora.jpg",
+            "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+          }
+         ]
       },
       {
         "id": 2,
-        "name": "Copacabana Beach, Brazil",
-        "imageUrl": "Images/Jaban.png",
-        "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+        "name": "Mauritius Beach",
+        "cities":[
+          {
+            "name": "Copacabana Beach, Brazil",
+            "imageUrl": "Images/beaches/Mauritius.jpg",
+            "description": "This scenic African island, which sits east of Madagascar, offers a multitude of beaches worth prioritizing."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Maldives",
+        "cities":[
+          {
+            "name": "Maldives, India",
+            "imageUrl": "Images/beaches/Maldives.jpg",
+            "description": "This Indian Ocean paradise is made up of approximately 1,200 islands – and each beach is more beautiful than the last."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Whitsunday Islands",
+        "cities":[
+          {
+            "name": "Whitsunday Islands, Australia",
+            "imageUrl": "Images/beaches/Whitsunday.jpg",
+            "description": "Located off the northeastern coast of Australia, the Whitsunday Islands feel like an entirely different world"
+          }
+        ]
       }
+
+
     ]
   }
   
