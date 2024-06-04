@@ -196,7 +196,6 @@ body {
   top: 100px;
   right: 120px;
 }
-
 .main-result h1 {
   font-size: 22px;
   color: #0078e7;
@@ -204,6 +203,11 @@ body {
 .main-result h2 {
   color: #000;
   font-size: 24px;
+}
+.main-result .error-div {
+  color: #fb6264;
+  font-weight: 700;
+  text-align: center;
 }
 
 #weather h2 {

@@ -7,7 +7,7 @@
         "cities": [
           {
             "name": "Sydney, Australia",
-            "imageUrl": "../Images/Australia.png",
+            "imageUrl": "./Images/Australia.png",
             "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
           },
           {
