@@ -24,6 +24,9 @@ body {
 
 .logo-section {
   width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-info {
@@ -201,6 +204,27 @@ body {
 .main-result h2 {
   color: #000;
   font-size: 24px;
+}
+
+#weather h2 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 3px;
+}
+#weather p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.w-img {
+  width: 80px !important;
+}
+
+.wh-con {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
 }
 
 .con-container {
