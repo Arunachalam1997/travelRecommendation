@@ -13,11 +13,11 @@ function searchResult() {
   fetch("travel_recommendation_api.json")
     .then((response) => response.json())
     .then((data) => {
-      const countries = data.countries.find(
-        (country) => country.name.toLowerCase() == searchInput.toLowerCase()
-      );
+      const countries = data.countries.find((country) => country.name.toLowerCase() == searchInput.toLowerCase());
+      const temples = data.temples.find((temp) => temp.name.toLowerCase() == searchInput.toLowerCase());
+      const beaches = data.beaches.find((beach) => beach.name.toLowerCase() === searchInput.toLowerCase());
 
-      if (results) {
+      if (countries) {
         resultsDiv.innerHTML = "";
         const countryName = countries.name;
         countries.cities.map((city) => {
@@ -28,9 +28,40 @@ function searchResult() {
                 <img width="100%" src="${city.imageUrl}" alt="images"/>
                 <p>About City: ${city.description}</p> </div>`;
         });
-      } else {
+      }
+
+      if(temples){
+        resultsDiv.innerHTML = "";
+        const templeName = temples.name;
+        temples.temple.map((temp) =>{
+          resultsDiv.innerHTML = `
+          <div class= "main-result">
+          <h1>${templeName}</h1>
+          <h2>Temple name: ${temp.name}</h2>
+          <img width="100%" src="${temp.imageUrl}" alt="images"/>
+          <p>About City: ${temp.description}</p> </div>`;
+        });
+      }
+
+      if(beaches){
+        console.log(beaches);
+        resultsDiv.innerHTML = "";
+        const beachCountryName = beaches.name;
+        beaches.beach.map((beach) => {
+           resultsDiv.innerHTML += `
+            <div class="main-result">
+            <h1>${beachCountryName}</h1>
+            <h2>Beach name: ${beach.name}</h2>
+            <img width="100%" src="${beach.imageUrl}" alt="images"/>
+            <p>About Beach: ${beach.description}</p>
+      </div>`;
+  });
+      }
+
+      if(!countries && !temples && !beaches){
         resultsDiv.innerHTML = `<div class= "main-result"> 
-        <p class="error-div"> This country doesnt have any Travel Recommendation </p>
+        <img width="100%" src="./Images/No-data.png" alt="No Data Found">
+        <p class="error-div"> This Keyword doesnt have any Recommendation </p>
         </div>`
       }
     })

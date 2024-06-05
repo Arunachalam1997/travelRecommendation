@@ -53,30 +53,28 @@
     "temples": [
       {
         "id": 1,
-        "name": "Angkor Wat, Cambodia",
-        "imageUrl": "Images/Jaban.png",
-        "description": "A UNESCO World Heritage site and the largest religious monument in the world."
-      },
-      {
-        "id": 2,
-        "name": "Taj Mahal, India",
-        "imageUrl": "Images/Jaban.png",
-        "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+        "name": "Temple",
+        "temple": [
+          {
+            "name": "Angkor Wat, Cambodia",
+            "imageUrl": "Images/Jaban.png",
+            "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+          }
+        ]
       }
     ],
+    
     "beaches": [
       {
         "id": 1,
-        "name": "Bora Bora, French Polynesia",
-        "imageUrl": "Images/Jaban.png",
-        "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
-      },
-      {
-        "id": 2,
-        "name": "Copacabana Beach, Brazil",
-        "imageUrl": "Images/Jaban.png",
-        "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+        "name": "Beach",
+        "beach": [
+          {
+            "name": "Bora Bora, French Polynesia",
+            "imageUrl": "Images/beaches.jpg",
+            "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+          }
+        ]
       }
     ]
   }
-  
